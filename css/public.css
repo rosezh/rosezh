@@ -1,0 +1,98 @@
+a{
+    color:#555;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.borderB{
+    border: 1px solid blue;
+}
+.borderR{
+    border: 1px solid red;
+}
+.borderP{
+    border: 1px solid purple;
+}
+.clearFix::after{
+    content: '';
+    display: block;
+    clear: both;
+    zoom:1;
+    overflow: hidden;
+}
+
+.header{
+
+}
+.header .place{
+    height: 142px;
+}
+.header .headFix{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 999;
+    background: #fbfbfa;
+}
+.header .headFix .head-nav{
+    height: 74px;
+}
+.headFix .head-nav .user,.headFix .search {
+	width: 37px;
+	height: 37px;
+	padding: 17px 0 0 17px;
+}
+.headFix .search {
+	padding: 17px 17px 0 0;
+}
+
+/*头部中部*/
+.headFix .location{
+	width:258px;
+	height: 74px;
+	margin:0 auto
+}
+.headFix .location .hd-logo{
+	width: 116px;height: 38px;
+	padding-top:17px ;
+}
+.headFix .location .province{
+	font-size:26px;
+	padding-top: 24px;
+}
+/*头部滑动导航*/
+.head-move{
+	height: 68px;
+	background: #39424a;
+}
+.head-move ul{
+	height: 42px;
+	display: table;
+	padding-top:14px;
+	overflow: hidden;
+}
+.head-move ul li{
+	height: 42px;
+	display: table-cell;/*以表格的形式展示，展示在一列*/
+	white-space:nowrap;/*禁止换行*/
+	border-right: solid 2px #4a5259;
+	font-size: 24px;
+}
+.head-move ul li a{
+	color: #cfd3da;
+	padding: 2px 30px;
+}
+.head-move ul li.active a{
+	color: #fff;
+}
+.head-move ul li a span{
+	padding:5px 0
+}
+.head-move ul li.active a span{
+	border-bottom: solid 2px #f02387;
+}
+.headPlace{height: 142px;}

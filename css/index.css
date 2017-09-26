@@ -1,0 +1,109 @@
+
+/*网页内容主体部分*/
+.main{
+	max-width: 660px;/*最大宽度*/
+	height: auto;
+	margin: 0 auto;
+}
+.slide {
+	position: relative;
+	height: 198px;
+	overflow: hidden;
+}
+.slide ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.slide ul li{
+	width: 660px;
+	float: left;
+}
+.slide .dot{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 999;
+	overflow: hidden;
+}
+.slide .dot span{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border-radius: 50%;
+	background: red;
+}
+.slide .dot span.on{
+	background: yellow;
+}
+
+/*分类导航*/
+.productClass ul{
+	display: -webkit-flex;
+	display: flex;
+}
+.productClass ul li{
+	-webkit-flex:1;
+	flex: 1;
+}
+
+/*新品优惠*/
+.discount a.title{
+	height: 86px;
+	display: block;
+}
+.discount dl{
+	display: -webkit-flex;
+	display: flex;	
+}
+.discount dl dt,.discount dl dd{
+	-webkit-flex: 1;
+	flex: 1;
+}
+/*化妆品*/
+
+.makeup ul{
+	display: -webkit-flex;
+	display: flex;
+}
+.makeup li{
+	-webkit-flex:1;/*平分*/
+	flex: 1;
+} 
+
+/*内衣*/
+.bras .title{
+	height: 212px;
+}
+.bras ul{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:space-around;
+	padding: 8px;
+	background: #ffcced;
+}
+.bras ul li{
+	
+}
+/*更多热销好货*/
+.hotgoods ul{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	padding-bottom: 20px;
+}
+.hotgoods ul li{
+	padding:10px;
+	text-align: center;
+	line-height: 48px;
+	font-size: 20px;
+	color:#9e1315;
+	background: #f1f1f1;
+}
+.hotgoods ul li img{
+	width: 118px;
+	height: 125px;
+	box-shadow: 1px 1px 5px #999;
+}

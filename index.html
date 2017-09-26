@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script>
+			(function(){
+				function refreshfixedW(){
+					var width=window.screen.width,
+						fixedW=660,//固定宽度，此宽度与设计图宽度一样大小
+						scale=width/fixedW,
+						meta=document.createElement('meta'),
+						metaAttr={
+							name:'viewport',
+							content:'width='+fixedW+',initial-scale='+scale+',maximum-scale='+scale+',user-scalable=0'
+						};
+					for(var key in metaAttr){
+						meta[key]=metaAttr[key];
+					}
+					document.head.appendChild(meta);
+				}
+				refreshfixedW();
+				/******/
+				var　timer;
+				window.addEventListener('resize', function () {
+		        	clearTimeout(timer);
+			        timer = setTimeout(refreshfixedW, 300);
+			    }, false);
+			    window.addEventListener('pageshow', function (e) {
+			        if (e.persisted) {
+			            clearTimeout(timer);
+			            timer = setTimeout(refreshfixedW, 300);
+			        }
+			    }, false);
+			    /******/
+			})()
+		</script>
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/public.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/news.css">
+	</head>
+	<body>
+		<script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+		<script src="js/cssTransform.js"></script>
+		<script src="js/index.js"></script>
+		
+		<header class="header">
+			<div class="headFix">
+				<div class="head-nav">
+					<div class="user fl">
+						<a href="#"><img src="img/hd-user.jpg"></a>
+					</div>
+					<div class="search fr">
+						<a href="#"><img src="img/hd-search.jpg"></a>
+					</div>
+					<div class="location">
+						<div class="fl hd-logo"><img src="img/hd-title.jpg"></div>
+						<div class="fr province">
+							<a href="#">
+								<span id="location">乌鲁木齐</span>
+								<i><img src="img/hd-select.jpg"></i>
+								<script src="js/location.js"></script>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--头部下-->
+				<div class="head-move">
+					<ul>
+		                <li class="active"><a href="#"><span>首页</span></a></li>
+		                <li><a href="#"><span>唯品国际</span></a></li>
+		                <li><a href="#"><span>美妆</span></a></li>
+		                <li><a href="#"><span>男士</span></a></li>
+		                <li><a href="#"><span>女装</span></a></li>
+		                <li><a href="#"><span>鞋包</span></a></li>
+		                <li><a href="#"><span>运动</span></a></li>
+		                <li><a href="#"><span>家居家电</span></a></li>
+		                <li><a href="#"><span>母婴</span></a></li>
+		            </ul>
+				</div>
+			</div>
+			<div class="headPlace"></div>
+		</header>
+		<!--网页主体部分-->
+		<section class="main">
+			<!--轮播图部分-->
+			<section class="slide">
+				<ul>
+					<li><a href="#"><img src="img/slide1.jpg" alt="" width="100%" height="100%" /></a></li>
+					<li><a href="#"><img src="img/slide2.jpg" alt="" width="100%" height="100%" /></a></li>
+					<li><a href="#"><img src="img/slide3.jpg" alt="" width="100%" height="100%" /></a></li>
+				</ul>
+				<div class="dot">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				
+			</section>
+			<!--爱心提示  -->
+			<section class="tip"><img src="img/tip.jpg" width="100%" height="100%"></section>
+			<!--分类导航-->
+			<section class="productClass">
+				<ul>
+					<li><a href=""><img src="img/productClass1.jpg" alt="" width="100%" height="100%" /></a></li>
+					<li><a href=""><img src="img/productClass2.jpg" alt="" width="100%" height="100%" /></a></li>
+					<li><a href=""><img src="img/productClass3.jpg" alt="" width="100%" height="100%" /></a></li>
+					<li><a href=""><img src="img/productClass4.jpg" alt="" width="100%" height="100%" /></a></li>
+				</ul>
+				<ul>
+					<li><a href=""><img src="img/productClass5.jpg" alt="" width="100%" height="100%" /></a></li>
+					<li><a href=""><img src="img/productClass6.jpg" alt="" width="100%" height="100%" /></a></li>
+					<li><a href=""><img src="img/productClass7.jpg" alt="" width="100%" height="100%" /></a></li>
+					<li><a href=""><img src="img/productClass8.jpg" alt="" width="100%" height="100%" /></a></li>
+				</ul>
+			</section>
+			
+				
+			<!--微信应用-->
+			<section class="showapi">
+	        	<div class="navbar">
+		        	<div class="navbar-item navbar-item-on">文章列表</div>
+		        	<div class="navbar-item">微信应用</div>
+	        	</div>
+	        	<div class="page_wrap"><!--这个容器上要进行滑动-->
+	        		<div class="page page-on">
+	        			<!--<a class="lianjie" href="">
+	        				<img src="" width="100%" height="100%">
+		        			<span>一不小心就害了娃！婴儿米粉的6个大坑，你踩过几个</span>
+		        			<i>&gt;</i>
+	        			</a>
+	        			<a class="lianjie" href="">
+	        				<img src="" width="100%" height="100%">
+		        			<span>一不小心就害了娃！婴儿米粉的6个大坑，你踩过几个</span>
+		        			<i>&gt;</i>
+	        			</a>-->
+	        		</div>
+	        		<div class="page">
+	        			<ul>
+	        				<li><a href=""><img src="img/order.png" alt="" /><br><span>个人档案</span></a></li>
+	        				<li><a href=""><img src="img/picUpload.png" alt="" /><br><span>图片拍照</span></a></li>
+	        				<li><a href=""><img src="img/press.png" alt="" /><br><span>我的账单</span></a></li>
+	        				<li><a href=""><img src="img/share.png" alt="" /><br><span>精彩分享</span></a></li>
+	        				<li><a href=""><img src="img/game.png" alt="" /><br><span>娱乐游戏</span></a></li>
+	        				<li><a href=""><img src="img/record.png" alt="" /><br><span>录音翻译</span></a></li>
+	        				<li><a href=""><img src="img/map.png" alt="" /><br><span>实时地图</span></a></li>
+	        				<li><a href=""><img src="img/check.png" alt="" /><br><span>图片预览</span></a></li>
+	        				<li><a href=""><img src="img/scan.png" alt="" /><br><span>微信扫码</span></a></li>
+	        			</ul>
+	        		</div>
+	        	</div>
+        	</section>
+        	
+			<!--新品优惠打折-->
+			<section class="discount">
+				<a class="title" href="#"><img src="img/discount.jpg" width="100%" height="100%"></a>
+				<dl>
+					<dt><img src="img/discount1.jpg" width="100%" height="100%"></dt>
+					<!--<dd>
+						<a href=""><img src="img/discount2.jpg" width="100%" height="100%"></a>
+						<a href=""><img src="img/discount3.jpg" width="100%" height="100%"></a>只需要加div给两个a包起来就可以了
+					</dd>-->
+					<dd>
+						<div><a href=""><img src="img/discount2.jpg" width="100%" height="100%"></a></div>
+						<div><a href=""><img src="img/discount3.jpg" width="100%" height="100%"></a></div>
+					</dd>
+				</dl>
+			</section>
+			<!--化妆品-->
+			<section class="makeup">
+				<a class="title" href=""><img src="img/makeUp.jpg" width="100%" height="100%"></a>
+				<ul>
+					<li><a href=""><img src="img/makeUp1.jpg" alt="" width="100%" height="100%" /></a></li>
+					<li><a href=""><img src="img/makeUp2.jpg" alt="" width="100%" height="100%" /></a></li>
+					<li><a href=""><img src="img/makeUp3.jpg" alt="" width="100%" height="100%" /></a></li>
+					<li><a href=""><img src="img/makeUp4.jpg" alt="" width="100%" height="100%" /></a></li>
+				</ul>
+			</section>
+			<!--内衣-->
+	        <section class="bras">
+	        	<a class="title" href=""><img src="img/bras.jpg" alt="" width="100%" height="100%" /></a>
+	        	<ul>
+	        		<li><a href=""><img src="img/bras1.jpg" alt="" width="100%" height="100%" /></a></li>
+	        		<li><a href=""><img src="img/bras2.jpg" alt="" width="100%" height="100%" /></a></li>
+	        		<li><a href=""><img src="img/bras3.jpg" alt="" width="100%" height="100%" /></a></li>
+	        		<li><a href=""><img src="img/bras4.jpg" alt="" width="100%" height="100%" /></a></li>
+	        	</ul>
+	        </section>
+	        <section class="hotgoods">
+	        	<a class="title" href="#"><img src="img/hotGoodShopTop.jpg" alt="" width="100%" height="100%"></a>
+	        	<ul>
+	        		<li><a href=""><img src="img/hotGoodShop1.jpg" alt=""  width="100%" height="100%"/><br><span>羽绒服&gt;</span></a></li>
+	        		<li><a href=""><img src="img/hotGoodShop2.jpg" alt=""  width="100%" height="100%"/><br><span>保暖内衣&gt;</span></a></li>
+	        		<li><a href=""><img src="img/hotGoodShop3.jpg" alt=""  width="100%" height="100%"/><br><span>气质大衣&gt;</span></a></li>
+	        		<li><a href=""><img src="img/hotGoodShop4.jpg" alt=""  width="100%" height="100%"/><br><span>连衣裙&gt;</span></a></li>
+	        	</ul>
+	        </section>
+        
+		</section>
+	</body>
+</html>
