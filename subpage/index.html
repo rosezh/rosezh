@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>二级页面</title>
+    <script>
+    	(function(){
+    		refreshFixedW();
+    		function refreshFixedW(){
+	    		var width=window.screen.width,
+	    			fixedW=660,
+	    			scale=width/fixedW;
+	    			meta=document.createElement('meta'),
+	    			metaAttr={
+	    				'name':'viewport',
+	    				'content':'width='+fixedW+',initial-scale='+scale+',maximum-scale='+scale+',user-scalable=0'
+	    			}
+				for(var k in metaAttr){
+					meta[k]=metaAttr[k]
+				}
+				document.querySelector('head').appendChild(meta);	
+    		}
+    		window.addEventListener('resize',function(){
+    			refreshFixedW();
+    		});
+    			
+    	})();
+        
+    </script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body style="height: 1500px">
+	<script src="js/ajax.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/animateTime.js"></script>
+    <!--头部-->
+    <section class="retShare">
+        <div class="return fl"><a href=""><img src="img/return.jpg"></a></div>
+        <div class="share fr"><a href=""><img src="img/share.jpg"></a></div>
+        <div class="title">新人专享_今日特惠大牌</div>
+    </section>
+
+    <!--主体内容部分-->
+    <section class="main">
+        <!--大大的海报-->
+        <section class="bigAd">
+            <a href="#"><img src="img/bigAd.jpg" width="100%" height="100%" alt=""></a>
+        </section>
+
+        <!--优惠卷-->
+        <section class="coupon">
+            <a href="#"><img src="img/coupon.jpg" width="100%" height="100%" alt=""></a>
+        </section>
+
+        <!--新品选项卡导航-->
+        <section class="new-shop">
+            <nav>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </nav>
+        </section>
+		
+		<section class="clothes">
+			<p class="title"><img src="img/clothes.jpg" alt="" width="100%" height="100%" /></p>
+			<!--<ul class="list">
+				<li class="pic"><img class="big-pic" src="img/clothes1.jpg"><img class="small-pic" src="img/clothes1-1.png"></li>
+				<li class="txt"><span class="price">1.3折起</span>韩都衣舍HSTYLE女装春装专场</li>
+				<li class="buy"><span class="">立即购买</span></li>
+			</ul>-->
+			
+		</section>
+        
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

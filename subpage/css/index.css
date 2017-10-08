@@ -1,0 +1,101 @@
+.retShare{
+	font-size: 34px;
+	text-align: center;
+}
+.retShare .return{
+	padding: 18px 0 18px 18px;
+}
+.retShare .share{
+	padding: 18px 18px 18px 0;
+}
+.retShare  img{
+	width: 38px;
+	height: 38px;
+}
+.retShare .title{
+	padding-top:18px ;
+}
+
+
+
+/*主体内容部分*/
+.main{
+    max-width: 660px;
+    margin: auto;
+}
+
+/*大大的海报*/
+.bigAd{
+    height: 440px;
+}
+
+/*优惠卷*/
+.coupon{
+    height: 135px;
+}
+
+/*新品选项卡导航*/
+.new-shop{
+    height: 76px;
+    background: url("../img/new-shop-nav.jpg");
+    background-size: 660px 270px;
+}
+.new-shop nav{
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+}
+.new-shop nav a{
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+/*新品服饰*/
+.clothes{
+
+}
+.clothes ul{
+	width: 304px;
+	height:492px;
+	border:2px solid #d0d0d0;
+	overflow: hidden;
+	margin: 0 10px;
+	font-size:24px;	
+	float: left;
+	margin-bottom: 10px;
+}
+.clothes ul li.pic{
+	text-align: center;
+}
+.clothes ul .small-pic{
+	width: 132px;
+    height: 64px;
+    background: white;
+    border: 2px solid #f3f3f3;
+    margin: 0 auto;
+    position: relative;
+    top: -32px;
+}
+.clothes ul li.txt{
+	padding: 0 5px;
+}
+.clothes ul li.txt .price{
+	padding-right: 30px;
+	color: #de3d96;
+}
+
+.clothes ul li.buy span{
+	width: 280px;
+    height: 50px;
+    display: block;
+    margin:0 auto;
+    text-align: center;
+    line-height: 50px;
+    background: #de3d96;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
