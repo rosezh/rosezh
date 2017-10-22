@@ -10,6 +10,5 @@ input,select{vertical-align:middle;font-size:100%;line-height:150%;font-family:a
 a{text-decoration:none;outline:none;hide-focus:expression(this.hideFocus=true);background-color:transparent;-webkit-tap-highlight-color:transparent;}
 
 body{font:14px/1.5 arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
-touch-action: none;
 }
 
